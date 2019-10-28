@@ -6,17 +6,30 @@ Created on Fri Oct 25 11:59:54 2019
 """
 import matplotlib.pyplot as plt
 
-def main():
+def main(n):
     nums = []
     divisors = []
-    for i in range(2,10000):
-        nums.append(i);
+    dist = []
+    for i in range(2,n):
+        nums.append(i)
         divisors.append(0);
-    
+
     for i in range(len(nums)):
-        for div in range(1,(int((nums[i] ** (0.5))) + 1)):
+        for div in range(1,(int((nums[i])))):
             if nums[i] % (div) == 0:
                 divisors[i] += 1
-    
-    plt.plot(nums, divisors, 'o');
-    plt.show();
+    for i in divisors:
+        if i > len(dist) - 1:
+            while i > len(dist) - 1:
+                dist.append(0)
+        else:
+            dist[i] += 1
+
+    plt.plot(nums, divisors,'.')
+    plt.show()
+    plt.plot(range(len(dist)),dist, )
+    plt.show()
+    #print(divisors[len(divisors) - 1])
+
+    #for i in range(len(divisors) - 1):
+    #    print(divisors[i])
