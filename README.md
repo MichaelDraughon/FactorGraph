@@ -1,5 +1,11 @@
 # FactorGraph
 
-This python tool allows you to enter in any n, and it will first analyze how many factors that number has, and then it will make a distribution of the number of n's with a given number of factors.
+This program has been made for recreational number threory purposes, however, with the visualizations set in the progrm right now, there are some interesting things you can ascertain from computing phi(n).
 
-Something interesting is that there is a very obvious peak in the distribution graph at 3, 7, and 11. If anyone reading this has an explanation, I would love to hear it (also interesting that the 3 major peaks are prime, and the powers of 2 tbe very small).
+<strong>Here they are</strong>
+<ul>
+  <li>There seems to be a large number of numbers that have a prime number of factors (excluding 1), for instance in the first 100 integers, 83 of them have some prime number of factors</li>
+  <li>This program also graphs a histogram of the average number of factors that an arbitrary interval {1,n} has, as n increases, the line graphed seems to approach some sort of logarithmic function, I do not know the base of that log function, but I have a feeling it might be base pi due to some initial calculations and looking at the values of the file</li>
+</ul>
+
+Any help on this is greatly appreciated as this is very interesting since I could not find anything referencing this specific pattern.
